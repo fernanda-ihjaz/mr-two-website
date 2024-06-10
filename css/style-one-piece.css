@@ -11,6 +11,7 @@
 
 body {
     background-color: aliceblue !important;
+    overflow-y: auto;
 }
 
 p, a {
@@ -44,76 +45,7 @@ body > .row {
     gap: 1%;
 }
 
-
-    
-        
-        
-/* *{
-    margin: 0;
-    padding: 0;
+body > .row > .col-8 > .scrollspy-example > p {
+    font-size: clamp(14px, 4vw, 20px);
 }
 
-h1, h2, p {
-    margin: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-a, li {
-    text-decoration: none;
-    color: var(--cor-terciaria);
-}
-
-header > nav {
-    height: var(--tam-header);
-    background-color: var(--cor-primaria);
-    display: flex;
-    gap: 80px;
-    align-items: center;
-    font-size: clamp(14px, 4vw, 30px);
-    justify-content: flex-start;
-    padding-left: 180px;
-}
-
-.logo {
-    max-width:100px;
-    max-height:150px;
-    width: auto;
-    height: auto;
-}
-
-header > nav >.header-links > .nav-header {
-    display: flex;
-    gap: 40px;
-}
-
-.conteudo {
-    height: var(--tam-conteudo);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: var(--cor-terciaria);
-}
-
-#texto {
-    font-size: 24px;
-    text-align: center;
-    padding-top: 60px;
-    gap: 5%;
-    color: var(--cor-primaria);
-}
-
-footer {
-    width: 100%;
-    height: auto;
-    padding: 24px;
-    text-align: center;
-    background-color: var(--cor-primaria);
-    color: var(--cor-terciaria);
-    font-size: clamp(12px, 4vw, 24px);
-} */
