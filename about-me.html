@@ -54,27 +54,21 @@
 
         </div>
         
-        <form action="/submit_form.php" method="post" enctype="multipart/form-data">
-            
-           
-            <fieldset>
-                <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">E-mail:</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                  </div>
-                  <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Mensagem:</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Digite sua mensagem"></textarea>
-                </div>
-
-                <div class="col-12">
-                    <button class="btn btn-primary" type="submit">Enviar</button>
-                </div>
-    
-            </fieldset>
-        
-        
-        </form>
+<form id="contactForm" onsubmit="return submitForm()" action="/submit_form.php" method="post" enctype="multipart/form-data">
+    <fieldset>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">E-mail:</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" name="email" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Mensagem:</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" name="message" rows="3" placeholder="Digite sua mensagem"></textarea>
+        </div>
+        <div class="col-12">
+            <button class="btn btn-primary" type="button" onclick="submitForm()">Enviar</button>
+        </div>
+    </fieldset>
+</form>
 
     </div>
 
@@ -88,7 +82,20 @@
             <p class="text-center">© 2024 Fernanda Ihjaz, Inc</p>
           </div>
         </div>
-      </footer>
+    </footer>
+
+    <script>
+      function submitForm() {
+          var email = document.getElementById("exampleFormControlInput1").value;  
+          if (!email.trim()) {
+              alert("Por favor, preencha o campo de e-mail.");
+              return false; // Evita o envio do formulário
+          }
+          return true; // Permite o envio do formulário se os campos estiverem preenchidos
+      }
+    </script>
+  
+  
 
 </body>
 </html>
