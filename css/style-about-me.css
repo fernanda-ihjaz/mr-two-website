@@ -34,9 +34,13 @@ p, a, h1 {
 footer {
     background-color: var(--cor-primaria);
     color: var(--cor-terciaria);
+
     align-items: center;
-    padding: 100px;
-    font-weight: 400;
+    padding: 50px;
+    font-weight: 400px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 footer > p {
@@ -47,8 +51,6 @@ footer > p {
 .conteudo {
     margin: 3%;
     margin-left: 17%;
-    margin-bottom: 100px !important;
-
 }
 
 .conteudo > .texto > h1 {

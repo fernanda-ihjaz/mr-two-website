@@ -34,9 +34,13 @@ p, a {
 footer {
     background-color: var(--cor-primaria);
     color: var(--cor-terciaria);
+
     align-items: center;
-    padding: 100px;
-    font-weight: 400;
+    padding: 50px;
+    font-weight: 400px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 footer > p {
@@ -49,7 +53,7 @@ main {
     justify-content: center;
     padding: 0%;
     margin: 3%;
-    font-size: clamp(14px, 4vw, 20px);
     gap: 5%;
-    margin-bottom: 100px;
+
+    font-size: clamp(14px, 4vw, 20px);
 }
