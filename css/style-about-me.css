@@ -33,15 +33,22 @@ p, a, h1 {
             
 footer {
     background-color: var(--cor-primaria);
+    color: var(--cor-terciaria);
+    align-items: center;
+    padding: 100px;
+    font-weight: 400;
 }
 
-.bd-footer > .container > .row > p {
-    color: aliceblue;
+footer > p {
+    text-align: center;
+    margin: auto;
 }
 
 .conteudo {
     margin: 3%;
     margin-left: 17%;
+    margin-bottom: 100px !important;
+
 }
 
 .conteudo > .texto > h1 {

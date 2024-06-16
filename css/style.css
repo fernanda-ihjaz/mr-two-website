@@ -5,8 +5,8 @@
 }
 
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
 }
 
 body {
@@ -33,10 +33,15 @@ p, a {
             
 footer {
     background-color: var(--cor-primaria);
+    color: var(--cor-terciaria);
+    align-items: center;
+    padding: 100px;
+    font-weight: 400;
 }
 
-.bd-footer > .container > .row > p {
-    color: aliceblue;
+footer > p {
+    text-align: center;
+    margin: auto;
 }
 
 main {
@@ -46,4 +51,5 @@ main {
     margin: 3%;
     font-size: clamp(14px, 4vw, 20px);
     gap: 5%;
+    margin-bottom: 100px;
 }

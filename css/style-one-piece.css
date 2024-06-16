@@ -34,15 +34,21 @@ p, a {
             
 footer {
     background-color: var(--cor-primaria);
+    color: var(--cor-terciaria);
+    align-items: center;
+    padding: 100px;
+    font-weight: 400;
 }
 
-.bd-footer > .container > .row > p {
-    color: aliceblue;
+footer > p {
+    text-align: center;
+    margin: auto;
 }
 
 body > .row {
     margin-top: 1%;
     gap: 1%;
+    margin-bottom: 100px;
 }
 
 body > .row > .col-8 > .scrollspy-example > p {
