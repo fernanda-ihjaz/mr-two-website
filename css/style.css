@@ -30,22 +30,15 @@ p, a {
     font-size: clamp(14px, 4vw, 20px); 
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-            
+
 footer {
     background-color: var(--cor-primaria);
-    color: var(--cor-terciaria);
-
-    align-items: center;
-    padding: 50px;
-    font-weight: 400px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    position: relative;
+    bottom: 0%;
 }
 
-footer > p {
-    text-align: center;
-    margin: auto;
+.bd-footer > .container > .row > p {
+    color: aliceblue;
 }
 
 main {
