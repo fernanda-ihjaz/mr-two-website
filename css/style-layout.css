@@ -1,0 +1,71 @@
+/* Padrão */
+
+:root {
+    --cor-primaria: #0D6EFD;
+    --cor-secundaria: #72d7ff;
+    --cor-terciaria: aliceblue;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body  {
+    background-color: var(--cor-terciaria) !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    height: 100% !important;
+}
+
+p, a, li {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    font-size: clamp(14px, 4vw, 20px);
+}
+
+/* HEADER ----------------------------------------------------------------------------------- */
+
+.cabecalho {
+    background-color: var(--cor-primaria);
+    position: fixed;
+    width: 100%;
+    height: 70px;
+}
+
+.container-fluid > .collapse > .navbar-nav > .nav-item > .nav-link {
+    color: aliceblue;
+}
+
+.container-fluid > a {
+    font-size: clamp(14px, 4vw, 20px); 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* MAIN ----------------------------------------------------------------------------------- */
+
+main {
+    height: 100% !important;
+    background-color: #72d7ff !important;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+/* FOOTER ----------------------------------------------------------------------------------- */
+
+
+footer {
+    background-color: var(--cor-primaria);
+    text-align: center;
+    align-content: center;
+    width: 100%;
+    position: fixed !important;
+    bottom: 0;
+    left: 0;
+    height: 70px;
+}
+
+.bd-footer > .container > .row > p {
+    color: aliceblue;
+    font-size: clamp(10px, 2vw, 20px);
+}

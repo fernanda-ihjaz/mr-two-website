@@ -1,0 +1,52 @@
+/* Conteúdo da página principal: Home/index */
+
+.content-home {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+/* ------------------------------------------------------------------------------------ */
+
+/* Conteudo da página One Piece */
+
+.content-op {
+    scroll-snap-type: start;
+}
+
+.content-op > .row {
+
+}
+
+.content-op > .row > .col-8 > .scrollspy-example > p {
+
+}
+
+/* ------------------------------------------------------------------------------------ */
+
+/* Conteudo da página About Me */
+
+.content-about-me {
+    background-color: #72d7ff;
+    height: 100% !important;
+}
+
+.content-about-me > .texto {
+}
+
+.content-about-me > .texto > h1 {
+    
+}
+
+.content-about-me > .texto > p {
+    
+}
+
+.content-about-me > form > fieldset > .mb-3 > input {
+    width: 20%;
+}
+
+.content-about-me > form > fieldset > .mb-3 > textarea {
+    width: 30%;
+}
